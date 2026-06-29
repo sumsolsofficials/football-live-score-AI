@@ -1,86 +1,114 @@
+<div align="center">
+
 # ⚽ Football Live Scoreboard
 
-A full-stack, real-time football live scores application built with the MERN stack (minus MongoDB). It streams live match data, goals, and match statistics across multiple leagues using the [API-Football v3](https://www.api-football.com/) service, with a Node.js/Express backend and a React/Tailwind CSS frontend.
+### Real-Time Football Live Scores, Leagues & Match Statistics
 
-**📖 Full online documentation:** [https://football-live-scoreboard-docs.netlify.app/](https://football-live-scoreboard-docs.netlify.app/)
+**Production-ready full-stack football live score app** — React frontend, Node.js/Express backend, Socket.IO live updates, and [API-Football v3](https://www.api-football.com/) integration. Track live matches, today's fixtures, goals, possession, and stats across Premier League, Champions League, La Liga, and more.
 
-**🌐 Live demo:** [https://football-live.sumsols.com/](https://football-live.sumsols.com/)
+<br />
 
-> **🔑 Your own API key required** — This download does **not** include an API key. After install, register at [API-Football](https://dashboard.api-football.com/register) (free tier available), copy `Backend/.env.example` to `Backend/.env`, and paste your key as `API_KEY`. See **`API-KEY-SETUP.txt`** for step-by-step instructions.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-View_App-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://football-live.sumsols.com/)
+[![Documentation](https://img.shields.io/badge/📖_Documentation-Full_Guide-16a34a?style=for-the-badge&logo=readthedocs&logoColor=white)](https://football-live-scoreboard-docs.netlify.app/)
 
----
+<br />
 
-## Table of Contents
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-5-000000?style=flat-square&logo=express&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-4-010101?style=flat-square&logo=socket.io&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white)
+![API-Football](https://img.shields.io/badge/API--Football-v3-FF6B00?style=flat-square)
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Folder Structure](#folder-structure)
-- [Installation & Setup](#installation--setup)
-- [Environment Variables](#environment-variables)
-- [How to Run Locally](#how-to-run-locally)
-- [Usage Guide](#usage-guide)
-- [API Integration Details](#api-integration-details)
-- [REST API Reference](#rest-api-reference)
-- [Socket.IO Events](#socketio-events)
-- [Deployment](#deployment)
-- [Future Improvements](#future-improvements)
-- [License](#license)
+</div>
 
 ---
 
-## Features
-
-- **Live match tracking** — real-time scores, match minute, and status for all in-progress fixtures worldwide
-- **Today's fixtures** — full schedule for the current day, grouped by league
-- **League browser** — searchable list of all active leagues, sorted by prominence (Premier League, Champions League, La Liga, etc.)
-- **Match detail view** — per-fixture page with team lineups, goal events (scorer, assist, minute), and match statistics
-- **Match statistics** — shots on/off target, possession bar, corners, fouls, cards, pass accuracy, goalkeeper saves
-- **Goal timeline** — chronologically ordered event log with home/away attribution
-- **Socket.IO live polling** — server polls the API every 60 seconds, diffs against previous state, and emits only changed fixtures to connected clients
-- **Dark mode** — system-preference aware, persisted via `localStorage`, togglable in Settings
-- **Stats display style** — choose between progress bars, raw numbers, or both (persisted in `localStorage`)
-- **Animated sliding navigation** — sticky header with active-tab indicator that correctly tracks dynamic routes
-- **Responsive design** — mobile-first layout with a `max-w-2xl` content column that works on all screen sizes
-- **In-memory caching** — backend caches live fixtures (30 s TTL), today's fixtures (5 min), and league lists (10 min) to stay within free-tier API rate limits
-- **Request deduplication** — in-flight lock prevents burst duplicate API calls on concurrent requests
-- **Graceful error states** — empty state components and per-component error boundaries throughout the UI
+> **🔑 API key required (not included)** — Register free at [API-Football](https://dashboard.api-football.com/register), copy `Backend/.env.example` → `Backend/.env`, and set `API_KEY`. See **[API-KEY-SETUP.txt](./API-KEY-SETUP.txt)** for step-by-step instructions.
 
 ---
 
-## Tech Stack
+## 📋 Table of Contents
+
+| | |
+|---|---|
+| [✨ Features](#-features) | [🛠 Tech Stack](#-tech-stack) |
+| [📁 Folder Structure](#-folder-structure) | [⚙️ Installation](#️-installation--setup) |
+| [🔐 Environment Variables](#-environment-variables) | [▶️ Run Locally](#️-how-to-run-locally) |
+| [📱 Usage Guide & Screenshots](#-usage-guide--screenshots) | [🔌 API Integration](#-api-integration-details) |
+| [📡 REST API](#-rest-api-reference) | [⚡ Socket.IO Events](#-socketio-events) |
+| [🚀 Deployment](#-deployment) | [🔮 Future Improvements](#-future-improvements) |
+| [📄 License](#-license) | |
+
+---
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Live scores & fixtures**
+- Real-time scores, match minute, and status worldwide
+- Today's fixtures grouped by league
+- Searchable league browser (Premier League, UCL, La Liga…)
+- Live count badges on league cards
+
+**Match detail pages**
+- Team lineups, goal events, assists, and minute
+- Possession bar, shots, corners, fouls, cards
+- Chronological goal & event timeline
+
+</td>
+<td width="50%" valign="top">
+
+**Developer & UX**
+- Socket.IO server-side live polling (60s)
+- In-memory caching for API rate limits
+- Dark mode (system-aware, persisted)
+- Customizable stats display (bars / numbers / both)
+- Mobile-first responsive UI (Tailwind CSS)
+- Animated sticky navigation with route tracking
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠 Tech Stack
 
 ### Backend
 
 | Layer | Technology |
-|---|---|
+|:------|:-----------|
 | Runtime | Node.js (ESM) |
-| Framework | Express |
+| Framework | Express 5 |
 | Real-time | Socket.IO |
 | HTTP client | Axios |
 | Environment | dotenv |
 | Dev server | Nodemon |
-| Formatter | Prettier |
 
 ### Frontend
 
 | Layer | Technology |
-|---|---|
-| UI library | React |
+|:------|:-----------|
+| UI library | React 19 |
 | Routing | React Router v7 |
-| Styling | Tailwind CSS v4 (`@tailwindcss/postcss`) |
+| Styling | Tailwind CSS v4 |
 | Build tool | Vite 8 |
 | HTTP client | Axios |
-| Linting | ESLint 10 |
 
 ### External Service
 
 | Service | Usage |
-|---|---|
-| [API-Football v3](https://v3.football.api-sports.io) | Live fixtures, match statistics, match events, league metadata |
+|:--------|:------|
+| [API-Football v3](https://v3.football.api-sports.io) | Live fixtures, statistics, events, league metadata |
 
 ---
 
-## Folder Structure
+## 📁 Folder Structure
 
 ```
 football-live-score-AI/
@@ -117,47 +145,35 @@ football-live-score-AI/
         └── src/
             ├── main.jsx            # React root, provider tree
             ├── App.jsx             # Route definitions
-            ├── App.css
-            ├── index.css           # Tailwind base + custom tokens
             ├── api/
-            │   ├── leagueApi.js    # League fetch helpers
-            │   └── matchApi.js     # Match fetch + normalizeMatch()
-            ├── assets/
-            │   ├── logo.png
-            │   ├── hero.png
-            │   └── shield-logo.svg
+            │   ├── leagueApi.js
+            │   └── matchApi.js
             ├── components/
-            │   ├── EmptyState.jsx
-            │   ├── Header.jsx      # Sticky nav with sliding indicator
-            │   ├── LeagueCard.jsx
-            │   ├── LiveBadge.jsx
-            │   ├── Loader.jsx
+            │   ├── Header.jsx
             │   ├── MatchCard.jsx
-            │   ├── PossessionBar.jsx
-            │   ├── StatRow.jsx
-            │   ├── TeamAvatar.jsx
-            │   └── TeamColumn.jsx
+            │   ├── LeagueCard.jsx
+            │   └── ...
             ├── context/
-            │   ├── MatchesContext.jsx  # Global live/today match state + 60s refresh
-            │   ├── SettingsContext.jsx # Stats style preference
-            │   └── ThemeContext.jsx    # Dark mode state + localStorage sync
+            │   ├── MatchesContext.jsx
+            │   ├── SettingsContext.jsx
+            │   └── ThemeContext.jsx
             └── pages/
-                ├── Home.jsx        # League browser with search and live count badges
-                ├── League.jsx      # Fixtures for a specific league
-                ├── LiveMatches.jsx # All live matches with league filter pills
-                ├── Matches.jsx     # Match detail: score, events, statistics
-                └── Settings.jsx    # Dark mode toggle, stats style, app info
+                ├── Home.jsx
+                ├── LiveMatches.jsx
+                ├── League.jsx
+                ├── Matches.jsx
+                └── Settings.jsx
 ```
 
 ---
 
-## Installation & Setup
+## ⚙️ Installation & Setup
 
 ### Prerequisites
 
 - **Node.js** v18 or later
 - **npm** v9 or later
-- An API key from [api-sports.io](https://dashboard.api-football.com/register) (free tier available)
+- Free API key from [api-sports.io](https://dashboard.api-football.com/register)
 
 ### 1. Clone the repository
 
@@ -182,7 +198,7 @@ npm install
 
 ---
 
-## Environment Variables
+## 🔐 Environment Variables
 
 ### Backend — `Backend/.env`
 
@@ -193,7 +209,7 @@ API_KEY=your_api_sports_key_here
 ```
 
 | Variable | Description | Default |
-|---|---|---|
+|:---------|:------------|:--------|
 | `PORT` | Port the Express server listens on | `5000` |
 | `ORIGIN` | Allowed CORS origin for the frontend | `*` |
 | `API_KEY` | Your API-Football v3 key from api-sports.io | — |
@@ -205,89 +221,92 @@ VITE_API_URL=http://localhost:5003
 ```
 
 | Variable | Description |
-|---|---|
-| `VITE_API_URL` | Base URL of the backend server (used by Vite's proxy config) |
+|:---------|:------------|
+| `VITE_API_URL` | Base URL of the backend server |
 
-> **Note:** The frontend uses Vite's dev proxy to forward `/api` requests to the backend, so `VITE_API_URL` only needs to be set if you change the backend port.
+> **Note:** The frontend uses Vite's dev proxy to forward `/api` requests to the backend.
 
 ---
 
-## How to Run Locally
+## ▶️ How to Run Locally
 
 Open two terminal windows.
 
-### Terminal 1 — Start the backend
+### Terminal 1 — Backend
 
 ```bash
 cd Backend
 npm run dev
 ```
 
-The server starts at `http://localhost:5003`. You should see:
-
 ```
 🚀 Server running → http://localhost:5003
 ⚽ Live poller running (60s)
 ```
 
-### Terminal 2 — Start the frontend
+### Terminal 2 — Frontend
 
 ```bash
 cd Frontend/Football-Frontend
 npm run dev
 ```
 
-The Vite dev server starts at `http://localhost:5173`.
-
-Open your browser and navigate to `http://localhost:5173`.
+Open **http://localhost:5173** in your browser.
 
 ---
 
-## Usage Guide
+## 📱 Usage Guide & Screenshots
 
-### Home Page — League Browser
+### Home — League Browser
 
-The home page displays all leagues with fixtures scheduled for today. Leagues are sorted by prominence (Premier League, Champions League, La Liga first). A live count badge appears on each league card when matches in that league are in progress. Use the search bar to filter leagues by name or country.
+Search leagues by name or country. Leagues are sorted by prominence. Live count badges appear when matches are in progress.
 
-<!-- SCREENSHOT: Home page showing league cards with live count badges and search bar -->
-![Home page](image-6.png)
-### Live Matches Page
+<p align="center">
+  <img src="image-6.png" alt="Football live scoreboard home page — league browser with search bar and live match count badges" width="720" />
+</p>
 
-Tap **Live** in the navigation bar to see all currently in-progress fixtures. When more than one league is live, horizontal filter pills appear at the top — tap any league to narrow the view. Each match card shows the current score, elapsed minute, and a pulsing LIVE indicator.
+### Live Matches
 
-![All live matches](image-1.png)
-### Match Detail Page
+All in-progress fixtures with score, elapsed minute, and pulsing LIVE indicator. Filter by league with horizontal pills.
 
-Tap any match card to open the detail view. The page shows:
+<p align="center">
+  <img src="image-1.png" alt="Live football matches page showing real-time scores and live status indicators" width="720" />
+</p>
 
-- **Score header** — team logos, current score, match status, and elapsed minute
-- **Goal events** — chronological timeline of goals, cards, and substitutions, attributed to home or away with scorer and assist
-![Match Timeline](image-2.png)
-- **Match statistics** — shots, possession, corners, fouls, yellow/red cards, and pass accuracy, displayed as progress bars, numbers, or both (configurable in Settings)
-![Match Stats Demo](image-3.png)
-<!-- SCREENSHOT: Match detail page showing the score header, event timeline, and statistics section -->
+### Match Detail — Events & Statistics
 
-### Settings Page
+Score header, goal timeline (scorer, assist, minute), and match stats — possession, shots, corners, fouls, cards.
 
-Access **Settings** from the navigation bar to configure:
+<p align="center">
+  <img src="image-2.png" alt="Football match detail page — goal events timeline with scorer and minute" width="720" />
+</p>
 
-- **Dark Mode** — toggle between light and dark themes; the preference is saved and respects the system default on first visit
-- **Stats Style** — choose `Bars`, `Numbers`, or `Both` for the statistics display on the match detail page
-- **Refresh Rate** — currently fixed at 60 seconds (API-Football free tier limit)
+<p align="center">
+  <img src="image-3.png" alt="Football match statistics — possession bar, shots on target, corners and fouls" width="720" />
+</p>
 
-<!-- SCREENSHOT: Settings page showing dark mode toggle and stats style segmented control -->
-![Settings](image-4.png)
+### Settings — Dark Mode & Preferences
+
+Toggle dark mode, choose stats display style (bars, numbers, or both).
+
+<p align="center">
+  <img src="image-4.png" alt="Football scoreboard settings page — dark mode toggle and stats display options" width="720" />
+</p>
+
+<p align="center">
+  <img src="image-5.png" alt="Football live scoreboard dark mode UI with match statistics" width="720" />
+</p>
+
 ---
-![Dark Mode](image-5.png)
 
-## API Integration Details
+## 🔌 API Integration Details
 
 ScoreStream uses the **API-Football v3** REST API (`https://v3.football.api-sports.io`), authenticated via the `x-apisports-key` header.
 
 ### Endpoints consumed
 
 | Endpoint | Parameters | Usage |
-|---|---|---|
+|:---------|:-----------|:------|
 | `GET /fixtures` | `live=all` | All currently in-progress fixtures |
 | `GET /fixtures` | `date=YYYY-MM-DD` | All fixtures for today |
 | `GET /fixtures` | `id=<fixtureId>` | Single fixture by ID |
@@ -296,100 +315,79 @@ ScoreStream uses the **API-Football v3** REST API (`https://v3.football.api-spor
 
 ### Status code mapping
 
-The service normalises the raw `statusShort` field from the API into one of three internal statuses:
-
 | Internal status | API status codes |
-|---|---|
+|:----------------|:-----------------|
 | `LIVE` | `1H`, `HT`, `2H`, `ET`, `BT`, `P`, `INT`, `SUSP` |
 | `FINISHED` | `FT`, `AET`, `PEN`, `ABD`, `WO`, `AWD` |
 | `UPCOMING` | All other codes |
 
 ### Caching strategy
 
-All data is cached in memory on the backend to protect against rate limit exhaustion on the free tier (100 requests/day).
-
 | Cache key | TTL | Scope |
-|---|---|---|
+|:----------|:----|:------|
 | `live` | 30 seconds | All live fixtures |
 | `today` | 5 minutes | All today's fixtures |
-| `leagues` | 10 minutes | League list derived from today's fixtures |
-| Per-fixture stats/events | 60 seconds | Individual fixture statistics and events |
+| `leagues` | 10 minutes | League list from today's fixtures |
+| Per-fixture stats/events | 60 seconds | Individual fixture data |
 
-In-flight request deduplication prevents burst API calls: if a second request for the same resource arrives while the first is pending, the second waits on the same `Promise` rather than issuing a new HTTP call.
+In-flight request deduplication prevents burst API calls on concurrent requests.
 
 ### Live polling (Socket.IO)
 
-The `livePoller` runs on the server every 60 seconds. On each tick it:
-
-1. Fetches the current live fixture list (served from cache if still fresh)
-2. Diffs each fixture against the previous snapshot (comparing `scoreA`, `scoreB`, `minute`, `status`)
-3. Emits `scoreUpdated` to the per-fixture room (`fixture_<id>`) for any fixture that changed
-4. Emits `liveMatchList` to the `live` room with the complete current list
-
-The frontend `MatchesContext` polls the REST endpoints directly every 60 seconds as a complementary refresh mechanism, keeping the league browser and live count badges in sync.
+The `livePoller` runs every 60 seconds, diffs fixture state, and emits `scoreUpdated` / `liveMatchList` to subscribed clients.
 
 ---
 
-## REST API Reference
+## 📡 REST API Reference
 
-Base URL: `http://localhost:5003`
+**Base URL:** `http://localhost:5003`
 
 | Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/` | Health check, lists available endpoints |
-| `GET` | `/api/matches/live` | All currently live fixtures |
-| `GET` | `/api/matches/today` | All fixtures for today |
-| `GET` | `/api/matches/:fixtureId` | Single fixture with stats and events |
-| `GET` | `/api/leagues` | All leagues with fixtures today |
+|:-------|:---------|:------------|
+| `GET` | `/` | Health check |
+| `GET` | `/api/matches/live` | All live fixtures |
+| `GET` | `/api/matches/today` | Today's fixtures |
+| `GET` | `/api/matches/:fixtureId` | Single fixture with stats & events |
+| `GET` | `/api/leagues` | Leagues with fixtures today |
 
-**Success response shape:**
+**Success response:**
 
 ```json
-{
-  "success": true,
-  "count": 12,
-  "data": [ ... ]
-}
+{ "success": true, "count": 12, "data": [ ... ] }
 ```
 
-**Error response shape:**
+**Error response:**
 
 ```json
-{
-  "success": false,
-  "message": "Failed to fetch data from football API",
-  "error": "..."
-}
+{ "success": false, "message": "Failed to fetch data from football API", "error": "..." }
 ```
 
 ---
 
-## Socket.IO Events
+## ⚡ Socket.IO Events
 
 ### Client → Server
 
 | Event | Payload | Description |
-|---|---|---|
-| `joinLive` | — | Subscribe to the live match list room |
-| `joinMatch` | `fixtureId: number` | Subscribe to updates for a specific fixture |
-| `leaveMatch` | `fixtureId: number` | Unsubscribe from a specific fixture room |
+|:------|:--------|:------------|
+| `joinLive` | — | Subscribe to live match list |
+| `joinMatch` | `fixtureId: number` | Subscribe to fixture updates |
+| `leaveMatch` | `fixtureId: number` | Unsubscribe from fixture |
 
 ### Server → Client
 
 | Event | Room | Payload | Description |
-|---|---|---|---|
-| `liveMatchList` | `live` | `Fixture[]` | Full current live fixture list (emitted every poll tick) |
-| `scoreUpdated` | `fixture_<id>` | `Fixture` | Single fixture that changed since last poll |
+|:------|:-----|:--------|:------------|
+| `liveMatchList` | `live` | `Fixture[]` | Full live fixture list |
+| `scoreUpdated` | `fixture_<id>` | `Fixture` | Updated fixture data |
 
 ---
 
-## Deployment
+## 🚀 Deployment
 
 ### Backend
 
-The backend is a standard Node.js Express application and can be deployed to any platform that supports Node 18+.
-
-**Environment variables to set in production:**
+Set production environment variables:
 
 ```env
 PORT=5003
@@ -397,57 +395,50 @@ ORIGIN=https://your-frontend-domain.com
 API_KEY=your_api_sports_key
 ```
 
-Make sure to restrict `ORIGIN` to your actual frontend domain in production.
+**Platforms:** Railway, Render, Fly.io, VPS (DigitalOcean, Hetzner)
 
-**Recommended platforms:** Railway, Render, Fly.io, or a VPS (DigitalOcean, Hetzner).
-
-Start command:
 ```bash
 npm start
 ```
 
 ### Frontend
 
-Build the production bundle:
-
 ```bash
 cd Frontend/Football-Frontend
 npm run build
 ```
 
-The output is written to `Frontend/Football-Frontend/dist/`. Deploy the contents of `dist/` to any static host.
-
-Update `VITE_API_URL` in the frontend `.env` to point to your deployed backend URL before building.
-
-**Recommended platforms:** Vercel, Netlify, Cloudflare Pages.
-
-> **Important:** Configure your static host to serve `index.html` for all routes (SPA fallback), as the app uses client-side routing via React Router.
+Deploy `dist/` to Vercel, Netlify, or Cloudflare Pages. Configure SPA fallback (`index.html` for all routes).
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
-- **Socket.IO on the frontend** — replace the REST polling interval in `MatchesContext` with a proper Socket.IO client connection to reduce REST calls and push updates in real time
-- **Standings page** — league table with points, goal difference, and form guide
-- **Favourite teams** — persist selected teams and surface their fixtures prominently on the Home page
-- **Push notifications** — browser notifications for goals in followed matches
-- **Search across fixtures** — global search for teams and players, not just leagues
-- **Match history** — browse fixtures from past dates, not just today
-- **Head-to-head stats** — historical results between two teams on the match detail page
-- **Redis cache** — replace the in-memory cache with Redis so the backend can be scaled horizontally without cache inconsistency
-- **Rate limit dashboard** — display remaining API calls for the day in the Settings page
-- **Unit and integration tests** — test coverage for the service layer and critical React components
-
----
-
-## License
-
-See [LICENSE.txt](./LICENSE.txt) for the commercial use terms included with this package.
-
-```
-Permission to use, copy, modify, and/or distribute this software for any purpose
-with or without fee is allowed.
+- Socket.IO client on frontend (replace REST polling)
+- League standings / table page
+- Favourite teams with persisted preferences
+- Browser push notifications for goals
+- Global team & player search
+- Past match history browser
+- Head-to-head stats on match detail
+- Redis cache for horizontal scaling
+- API rate limit dashboard in Settings
+- Unit and integration tests
 
 ---
 
-*Data provided by [API-Football](https://www.api-football.com/) · Built with React, Express, and Socket.IO*
+## 📄 License
+
+See [LICENSE.txt](./LICENSE.txt) for commercial use terms.
+
+---
+
+<div align="center">
+
+**Football Live Scoreboard** — Real-time scores powered by [API-Football](https://www.api-football.com/)
+
+Built with React · Express · Socket.IO · Tailwind CSS
+
+[Live Demo](https://football-live.sumsols.com/) · [Documentation](https://football-live-scoreboard-docs.netlify.app/)
+
+</div>
