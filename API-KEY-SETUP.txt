@@ -1,0 +1,90 @@
+================================================================================
+  API KEY SETUP — READ THIS FIRST AFTER DOWNLOAD
+================================================================================
+
+This product does NOT ship with an API key.
+
+Every user who downloads and installs this project must bring their own
+API-Football key. Without it, matches and leagues will not load.
+
+
+WHY?
+----
+Live scores come from API-Football (api-sports.io). That is a third-party
+service. Each developer/account needs their own subscription or free key.
+We cannot share one key with all buyers.
+
+
+STEP 1 — GET YOUR FREE API KEY
+------------------------------
+1. Open: https://dashboard.api-football.com/register
+2. Create a free account (email verification may be required)
+3. Go to your dashboard and copy your API key
+
+
+STEP 2 — ADD KEY TO THE BACKEND
+-------------------------------
+1. Open the Backend folder
+2. Copy .env.example to a new file named .env
+
+   Windows (PowerShell):
+     cd Backend
+     Copy-Item .env.example .env
+
+   Mac / Linux:
+     cd Backend
+     cp .env.example .env
+
+3. Open .env in any text editor
+4. Change this line:
+
+     API_KEY=your_api_sports_key_here
+
+   To your real key, for example:
+
+     API_KEY=abc123yourRealKeyFromDashboard
+
+5. Save the file. Never commit .env to Git or share it publicly.
+
+
+STEP 3 — INSTALL AND RUN
+------------------------
+Backend:
+  cd Backend
+  npm install
+  npm run dev
+
+Frontend (new terminal):
+  cd Frontend/Football-Frontend
+  npm install
+  npm run dev
+
+Open: http://127.0.0.1:5173
+
+
+FREE PLAN LIMITS
+----------------
+- 100 API requests per day
+- 10 requests per minute
+- This app uses backend caching to stay within limits
+
+
+FRONTEND — NO API KEY NEEDED
+----------------------------
+Only Backend/.env needs API_KEY. The React app talks to your backend;
+buyers do not put the football API key in the frontend.
+
+
+TROUBLESHOOTING
+---------------
+- Empty leagues / no matches → check API_KEY in Backend/.env
+- "Request limit" errors → daily free quota used; wait or upgrade plan
+- Still not working → restart backend after editing .env
+
+
+MORE HELP
+---------
+Documentation: https://football-live-scoreboard-docs.netlify.app/
+Live demo:     https://football-live.sumsols.com/
+
+================================================================================

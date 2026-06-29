@@ -1,0 +1,37 @@
+Football Live Scoreboard - License Agreement
+============================================
+
+Copyright (c) 2026 Football Live Scoreboard
+
+Permission is hereby granted to the purchaser of this item on Codester (or any
+authorized marketplace) to use, modify, and deploy this source code for personal
+or commercial client projects, subject to the license tier purchased on the
+marketplace (Regular or Extended License as defined by that platform).
+
+You may NOT:
+- Resell, redistribute, or sublicense the source code as a standalone product
+- Share the source code publicly (GitHub, forums, etc.) unless it is a private
+  repository for your own deployed project
+- Remove proprietary notices from the source files
+
+THIRD-PARTY DATA
+----------------
+Live match data is provided by API-Football (https://www.api-football.com/).
+This package does NOT include an API subscription or API key. Each purchaser
+must register their own account, obtain their own API key, and add it to
+Backend/.env after installation. You must comply with API-Football terms of
+service and rate limits.
+
+THIRD-PARTY SOFTWARE
+--------------------
+This project uses open-source dependencies (React, Express, Vite, Tailwind CSS,
+Socket.IO, Axios, etc.) under their respective licenses. See package.json files
+for dependency details.
+
+DISCLAIMER
+----------
+This software is provided "as is", without warranty of any kind. The authors
+are not liable for any damages arising from the use of this software.
+
+For full setup and API documentation, visit:
+https://football-live-scoreboard-docs.netlify.app/

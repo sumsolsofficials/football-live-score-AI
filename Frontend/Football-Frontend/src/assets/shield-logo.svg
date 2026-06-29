@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160">
+  <title>Shield Football Logo</title>
+  <defs>
+    <clipPath id="shield-clip">
+      <path d="M120 8 L208 44 V108 L120 152 L32 108 V44 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Shield outer stroke -->
+  <path d="M120 8 L208 44 V108 L120 152 L32 108 V44 Z" fill="#0b2746" stroke="#0b2746" stroke-width="2"/>
+  <!-- inner shield -->
+  <path d="M120 24 L188 50 V104 L120 136 L52 104 V50 Z" fill="#ffffff" opacity="0.06" />
+
+  <!-- banner ribbon -->
+  <path d="M28 86 C28 86 48 120 120 120 C192 120 212 86 212 86 L212 100 C212 100 192 132 120 132 C48 132 28 100 28 100 Z" fill="#0f3a6b" />
+  <rect x="40" y="72" width="160" height="34" rx="6" fill="#0f3a6b" />
+
+  <!-- ball on right -->
+  <g transform="translate(170,52) scale(0.55)">
+    <circle cx="0" cy="0" r="40" fill="#ffffff" stroke="#0b2746" stroke-width="4" />
+    <g transform="translate(-12,-12)" fill="#0b2746">
+      <polygon points="0,0 10,6 2,14 -8,8" />
+    </g>
+  </g>
+
+  <!-- player silhouette on left -->
+  <g transform="translate(62,36) scale(0.9)" fill="#0b2746">
+    <path d="M16 6 C20 10 32 12 36 16 C40 20 38 28 34 30 C30 32 26 34 22 36 C18 38 12 40 8 38 C6 36 8 30 12 28 C16 26 14 20 12 16 C10 12 12 8 16 6 Z" />
+    <path d="M32 42 C36 44 46 44 52 50 C58 56 54 64 48 66 C42 68 34 68 28 66 C22 64 20 58 24 52 C28 46 30 44 32 42 Z" />
+  </g>
+
+  <!-- shield inner outline -->
+  <path d="M120 18 L196 48 V112 L120 142 L44 112 V48 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.12" />
+
+  <!-- small accent dots -->
+  <circle cx="120" cy="8" r="3" fill="#0b2746" opacity="0.5" />
+  <circle cx="208" cy="44" r="3" fill="#0b2746" opacity="0.5" />
+  <circle cx="208" cy="108" r="3" fill="#0b2746" opacity="0.5" />
+  <circle cx="120" cy="152" r="3" fill="#0b2746" opacity="0.5" />
+  <circle cx="32" cy="108" r="3" fill="#0b2746" opacity="0.5" />
+  <circle cx="32" cy="44" r="3" fill="#0b2746" opacity="0.5" />
+
+  <!-- ribbon text placeholder (editable) -->
+  <text x="120" y="105" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="700" text-anchor="middle">&nbsp;</text>
+</svg>

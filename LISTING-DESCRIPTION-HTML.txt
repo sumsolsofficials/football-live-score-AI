@@ -1,0 +1,49 @@
+<h2>Football Live Scoreboard — Live Scores, Leagues &amp; Match Statistics</h2>
+
+<p><strong>Production-ready full-stack football app</strong> built with React, Node.js, Express, and API-Football v3. Clean UI, dark mode, match details, and backend caching — ready to deploy or customize for your clients.</p>
+
+<p><strong>Live demo:</strong> <a href="https://football-live.sumsols.com/">https://football-live.sumsols.com/</a><br>
+<strong>Documentation:</strong> <a href="https://football-live-scoreboard-docs.netlify.app/">https://football-live-scoreboard-docs.netlify.app/</a></p>
+
+<p><em>API key is NOT included. Each buyer registers a free API-Football account and adds their own key to Backend/.env after install.</em></p>
+
+<h3>Features</h3>
+<ul>
+<li>Live match scores, minute, and status</li>
+<li>Today's fixtures grouped by league</li>
+<li>Searchable league browser (Premier League, UCL, La Liga, and more)</li>
+<li>Match detail: goals, assists, events timeline, possession, shots, cards</li>
+<li>Dark mode and customizable stats display</li>
+<li>Mobile-first responsive UI (Tailwind CSS)</li>
+<li>Backend in-memory caching for API rate limits</li>
+<li>Socket.IO server-side live poller</li>
+</ul>
+
+<h3>Tech stack</h3>
+<ul>
+<li><strong>Frontend:</strong> React 18, Vite, Tailwind CSS, React Router</li>
+<li><strong>Backend:</strong> Node.js, Express, Socket.IO, Axios</li>
+<li><strong>Data:</strong> API-Football v3 (free tier supported)</li>
+</ul>
+
+<h3>What's included</h3>
+<ul>
+<li>Full source code (Backend + Frontend)</li>
+<li>README.md, README.txt, DOCUMENTATION.md, API-KEY-SETUP.txt</li>
+<li>LICENSE.txt and .env.example files</li>
+</ul>
+
+<h3>Requirements</h3>
+<ul>
+<li>Node.js 18+</li>
+<li>Your own free API-Football key (register at dashboard.api-football.com)</li>
+</ul>
+
+<h3>Quick setup</h3>
+<ol>
+<li><code>cd Backend</code> → <code>npm install</code> → copy <code>.env.example</code> to <code>.env</code> → add your API key → <code>npm run dev</code></li>
+<li><code>cd Frontend/Football-Frontend</code> → <code>npm install</code> → <code>npm run dev</code></li>
+<li>Open <code>http://127.0.0.1:5173</code></li>
+</ol>
+
+<p>Ideal for developers, agencies, and startups building a sports scores product or learning full-stack React + Node.js.</p>
