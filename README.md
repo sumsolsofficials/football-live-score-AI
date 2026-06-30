@@ -4,7 +4,7 @@
 
 **Real-time football live scores, leagues & match statistics**
 
-Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3]([https://www.api-football.com/](https://dashboard.api-football.com/login)) - live scores, today's fixtures, goals, possession & stats for Premier League, Champions League, La Liga, and more.
+Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](https://dashboard.api-football.com/login) - live scores, today's fixtures, goals, possession & stats for Premier League, Champions League, La Liga, and more.
 
 <a href="https://football-live.sumsols.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live_Demo-View_App-2563eb?style=flat-square&labelColor=555555" alt="Live Demo" /></a> <a href="https://football-live-scoreboard-docs.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Documentation-Full_Guide-16a34a?style=flat-square&labelColor=555555" alt="Documentation" /></a> <a href="https://sumsols.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Website-sumsols.com-059669?style=flat-square&labelColor=555555" alt="Website" /></a> <a href="https://www.facebook.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Facebook-SumSols-1877F2?style=flat-square&logo=facebook&logoColor=white&labelColor=555555" alt="Facebook" /></a> <a href="https://www.linkedin.com/company/sumsols-technologies/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-SumSols-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=555555" alt="LinkedIn" /></a>
 
