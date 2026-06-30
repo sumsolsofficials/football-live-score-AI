@@ -14,7 +14,7 @@ Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](ht
 
 ---
 
-> **🔑 Your own API key required** — This download does **not** include an API key. After install, register at [API-Football](https://dashboard.api-football.com/register) (free tier available), copy `Backend/.env.example` to `Backend/.env`, and paste your key as `API_KEY`. See **[API-KEY-SETUP.txt](./API-KEY-SETUP.txt)** for step-by-step instructions.
+> **🔑 Your own API key required** - This download does **not** include an API key. After install, register at [API-Football](https://dashboard.api-football.com/register) (free tier available), copy `Backend/.env.example` to `Backend/.env`, and paste your key as `API_KEY`. See **[API-KEY-SETUP.txt](./API-KEY-SETUP.txt)** for step-by-step instructions.
 
 ---
 
@@ -38,20 +38,20 @@ Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](ht
 
 ## Features
 
-- **Live match tracking** — real-time scores, match minute, and status for all in-progress fixtures worldwide
-- **Today's fixtures** — full schedule for the current day, grouped by league
-- **League browser** — searchable list of all active leagues, sorted by prominence (Premier League, Champions League, La Liga, etc.)
-- **Match detail view** — per-fixture page with team lineups, goal events (scorer, assist, minute), and match statistics
-- **Match statistics** — shots on/off target, possession bar, corners, fouls, cards, pass accuracy, goalkeeper saves
-- **Goal timeline** — chronologically ordered event log with home/away attribution
-- **Socket.IO live polling** — server polls the API every 60 seconds, diffs against previous state, and emits only changed fixtures to connected clients
-- **Dark mode** — system-preference aware, persisted via `localStorage`, togglable in Settings
-- **Stats display style** — choose between progress bars, raw numbers, or both (persisted in `localStorage`)
-- **Animated sliding navigation** — sticky header with active-tab indicator that correctly tracks dynamic routes
-- **Responsive design** — mobile-first layout with a `max-w-2xl` content column that works on all screen sizes
-- **In-memory caching** — backend caches live fixtures (30 s TTL), today's fixtures (5 min), and league lists (10 min) to stay within free-tier API rate limits
-- **Request deduplication** — in-flight lock prevents burst duplicate API calls on concurrent requests
-- **Graceful error states** — empty state components and per-component error boundaries throughout the UI
+- **Live match tracking** - real-time scores, match minute, and status for all in-progress fixtures worldwide
+- **Today's fixtures** - full schedule for the current day, grouped by league
+- **League browser** - searchable list of all active leagues, sorted by prominence (Premier League, Champions League, La Liga, etc.)
+- **Match detail view** - per-fixture page with team lineups, goal events (scorer, assist, minute), and match statistics
+- **Match statistics** - shots on/off target, possession bar, corners, fouls, cards, pass accuracy, goalkeeper saves
+- **Goal timeline** - chronologically ordered event log with home/away attribution
+- **Socket.IO live polling** - server polls the API every 60 seconds, diffs against previous state, and emits only changed fixtures to connected clients
+- **Dark mode** - system-preference aware, persisted via `localStorage`, togglable in Settings
+- **Stats display style** - choose between progress bars, raw numbers, or both (persisted in `localStorage`)
+- **Animated sliding navigation** - sticky header with active-tab indicator that correctly tracks dynamic routes
+- **Responsive design** - mobile-first layout with a `max-w-2xl` content column that works on all screen sizes
+- **In-memory caching** - backend caches live fixtures (30 s TTL), today's fixtures (5 min), and league lists (10 min) to stay within free-tier API rate limits
+- **Request deduplication** - in-flight lock prevents burst duplicate API calls on concurrent requests
+- **Graceful error states** - empty state components and per-component error boundaries throughout the UI
 
 ---
 
@@ -194,7 +194,7 @@ npm install
 
 ## Environment Variables
 
-### Backend — `Backend/.env`
+### Backend - `Backend/.env`
 
 ```env
 PORT=5003
@@ -206,9 +206,9 @@ API_KEY=your_api_sports_key_here
 |---|---|---|
 | `PORT` | Port the Express server listens on | `5000` |
 | `ORIGIN` | Allowed CORS origin for the frontend | `*` |
-| `API_KEY` | Your API-Football v3 key from api-sports.io | — |
+| `API_KEY` | Your API-Football v3 key from api-sports.io | - |
 
-### Frontend — `Frontend/Football-Frontend/.env`
+### Frontend - `Frontend/Football-Frontend/.env`
 
 ```env
 VITE_API_URL=http://localhost:5003
@@ -226,7 +226,7 @@ VITE_API_URL=http://localhost:5003
 
 Open two terminal windows.
 
-### Terminal 1 — Start the backend
+### Terminal 1 - Start the backend
 
 ```bash
 cd Backend
@@ -240,7 +240,7 @@ The server starts at `http://localhost:5003`. You should see:
 ⚽ Live poller running (60s)
 ```
 
-### Terminal 2 — Start the frontend
+### Terminal 2 - Start the frontend
 
 ```bash
 cd Frontend/Football-Frontend
@@ -255,7 +255,7 @@ Open your browser and navigate to `http://localhost:5173`.
 
 ## Usage Guide
 
-### Home Page — League Browser
+### Home Page - League Browser
 
 The home page displays all leagues with fixtures scheduled for today. Leagues are sorted by prominence (Premier League, Champions League, La Liga first). A live count badge appears on each league card when matches in that league are in progress. Use the search bar to filter leagues by name or country.
 
@@ -265,7 +265,7 @@ The home page displays all leagues with fixtures scheduled for today. Leagues ar
 
 ### Live Matches Page
 
-Tap **Live** in the navigation bar to see all currently in-progress fixtures. When more than one league is live, horizontal filter pills appear at the top — tap any league to narrow the view. Each match card shows the current score, elapsed minute, and a pulsing LIVE indicator.
+Tap **Live** in the navigation bar to see all currently in-progress fixtures. When more than one league is live, horizontal filter pills appear at the top - tap any league to narrow the view. Each match card shows the current score, elapsed minute, and a pulsing LIVE indicator.
 
 <p align="center">
   <img src="image-1.png" alt="Live football matches page with real-time scores and LIVE indicators" width="720" />
@@ -275,9 +275,9 @@ Tap **Live** in the navigation bar to see all currently in-progress fixtures. Wh
 
 Tap any match card to open the detail view. The page shows:
 
-- **Score header** — team logos, current score, match status, and elapsed minute
-- **Goal events** — chronological timeline of goals, cards, and substitutions, attributed to home or away with scorer and assist
-- **Match statistics** — shots, possession, corners, fouls, yellow/red cards, and pass accuracy, displayed as progress bars, numbers, or both (configurable in Settings)
+- **Score header** - team logos, current score, match status, and elapsed minute
+- **Goal events** - chronological timeline of goals, cards, and substitutions, attributed to home or away with scorer and assist
+- **Match statistics** - shots, possession, corners, fouls, yellow/red cards, and pass accuracy, displayed as progress bars, numbers, or both (configurable in Settings)
 
 <p align="center">
   <img src="image-2.png" alt="Football match detail — goal events timeline with scorer and minute" width="720" />
@@ -289,9 +289,9 @@ Tap any match card to open the detail view. The page shows:
 
 Access **Settings** from the navigation bar to configure:
 
-- **Dark Mode** — toggle between light and dark themes; the preference is saved and respects the system default on first visit
-- **Stats Style** — choose `Bars`, `Numbers`, or `Both` for the statistics display on the match detail page
-- **Refresh Rate** — currently fixed at 60 seconds (API-Football free tier limit)
+- **Dark Mode** - toggle between light and dark themes; the preference is saved and respects the system default on first visit
+- **Stats Style** - choose `Bars`, `Numbers`, or `Both` for the statistics display on the match detail page
+- **Refresh Rate** - currently fixed at 60 seconds (API-Football free tier limit)
 
 <p align="center">
   <img src="image-4.png" alt="Settings page — dark mode toggle and stats display style" width="720" />
@@ -441,24 +441,22 @@ The output is written to `Frontend/Football-Frontend/dist/`. Deploy the contents
 
 Update `VITE_API_URL` in the frontend `.env` to point to your deployed backend URL before building.
 
-**Recommended platforms:** Vercel, Netlify, Cloudflare Pages.
-
 > **Important:** Configure your static host to serve `index.html` for all routes (SPA fallback), as the app uses client-side routing via React Router.
 
 ---
 
 ## Future Improvements
 
-- **Socket.IO on the frontend** — replace the REST polling interval in `MatchesContext` with a proper Socket.IO client connection to reduce REST calls and push updates in real time
-- **Standings page** — league table with points, goal difference, and form guide
-- **Favourite teams** — persist selected teams and surface their fixtures prominently on the Home page
-- **Push notifications** — browser notifications for goals in followed matches
-- **Search across fixtures** — global search for teams and players, not just leagues
-- **Match history** — browse fixtures from past dates, not just today
-- **Head-to-head stats** — historical results between two teams on the match detail page
-- **Redis cache** — replace the in-memory cache with Redis so the backend can be scaled horizontally without cache inconsistency
-- **Rate limit dashboard** — display remaining API calls for the day in the Settings page
-- **Unit and integration tests** — test coverage for the service layer and critical React components
+- **Socket.IO on the frontend** - replace the REST polling interval in `MatchesContext` with a proper Socket.IO client connection to reduce REST calls and push updates in real time
+- **Standings page** - league table with points, goal difference, and form guide
+- **Favourite teams** - persist selected teams and surface their fixtures prominently on the Home page
+- **Push notifications** - browser notifications for goals in followed matches
+- **Search across fixtures** - global search for teams and players, not just leagues
+- **Match history** - browse fixtures from past dates, not just today
+- **Head-to-head stats** - historical results between two teams on the match detail page
+- **Redis cache** - replace the in-memory cache with Redis so the backend can be scaled horizontally without cache inconsistency
+- **Rate limit dashboard** - display remaining API calls for the day in the Settings page
+- **Unit and integration tests** - test coverage for the service layer and critical React components
 
 ---
 
@@ -474,6 +472,6 @@ See [LICENSE.txt](./LICENSE.txt) for the commercial use terms included with this
 
 <a href="https://football-live.sumsols.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live_Demo-View_App-2563eb?style=flat-square&labelColor=555555" alt="Live Demo" /></a> <a href="https://football-live-scoreboard-docs.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Documentation-Full_Guide-16a34a?style=flat-square&labelColor=555555" alt="Documentation" /></a> <a href="https://sumsols.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Website-sumsols.com-059669?style=flat-square&labelColor=555555" alt="Website" /></a> <a href="https://www.facebook.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Facebook-SumSols-1877F2?style=flat-square&logo=facebook&logoColor=white&labelColor=555555" alt="Facebook" /></a> <a href="https://www.linkedin.com/company/sumsols-technologies/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-SumSols-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=555555" alt="LinkedIn" /></a>
 
-<a href="https://www.instagram.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Instagram-SumSols-E4405F?style=flat-square&logo=instagram&logoColor=white&labelColor=555555" alt="Instagram" /></a> <a href="mailto:sumsolstechnologies@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Us-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=555555" alt="Email" /></a> <a href="tel:+923250602727"><img src="https://img.shields.io/badge/Phone-%2B92_3250602727-2563eb?style=flat-square&labelColor=555555" alt="Phone" /></a> <a href="https://www.api-football.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/API-Football-v3-FF6B00?style=flat-square&labelColor=555555" alt="API-Football" /></a> <a href="https://github.com/sumsolsofficials/football-live-score-AI" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white&labelColor=555555" alt="GitHub" /></a>
+<a href="https://www.instagram.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Instagram-SumSols-E4405F?style=flat-square&logo=instagram&logoColor=white&labelColor=555555" alt="Instagram" /></a> <a href="mailto:sumsolstechnologies@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Us-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=555555" alt="Email" /></a> <a href="tel:+923250602727"><img src="https://img.shields.io/badge/Phone-%2B92_3250602727-2563eb?style=flat-square&labelColor=555555" alt="Phone" /></a> <a href="https://github.com/sumsolsofficials/football-live-score-AI" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white&labelColor=555555" alt="GitHub" /></a>
 
 </div>
