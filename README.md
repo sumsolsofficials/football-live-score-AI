@@ -13,13 +13,15 @@ Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](ht
 
 <br />
 
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-5-000000?style=flat-square&logo=express&logoColor=white)
-![Socket.IO](https://img.shields.io/badge/Socket.IO-4-010101?style=flat-square&logo=socket.io&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white)
-![API-Football](https://img.shields.io/badge/API--Football-v3-FF6B00?style=flat-square)
+[![Website](https://img.shields.io/badge/Website-sumsols.com-16a34a?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sumsols.com/)
+[![Facebook](https://img.shields.io/badge/Facebook-SumSols-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-SumSols-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/)
+[![Instagram](https://img.shields.io/badge/Instagram-SumSols-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/)
+
+<br />
+
+[![Email](https://img.shields.io/badge/Email-sumsolstechnologies@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com)
+[![Phone](https://img.shields.io/badge/Phone-+92_3250602727-2563eb?style=for-the-badge)](tel:+923250602727)
 
 </div>
 
@@ -479,10 +481,19 @@ See [LICENSE.txt](./LICENSE.txt) for the commercial use terms included with this
 
 <div align="center">
 
-**Football Live Scoreboard** — Real-time scores powered by [API-Football](https://www.api-football.com/)
+**Developed by [SumSols Technologies](https://sumsols.com/)**
 
-Built with React · Express · Socket.IO · Tailwind CSS
+[![Website](https://img.shields.io/badge/Website-sumsols.com-16a34a?style=flat-square&logo=googlechrome&logoColor=white)](https://sumsols.com/)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/)
+[![Email](https://img.shields.io/badge/Email-sumsolstechnologies@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com)
+[![Phone](https://img.shields.io/badge/Phone-+92_3250602727-2563eb?style=flat-square)](tel:+923250602727)
+
+<br />
 
 [Live Demo](https://football-live.sumsols.com/) · [Documentation](https://football-live-scoreboard-docs.netlify.app/)
+
+Data by [API-Football](https://www.api-football.com/)
 
 </div>
