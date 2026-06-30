@@ -6,22 +6,9 @@
 
 Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](https://www.api-football.com/) — live scores, today's fixtures, goals, possession & stats for Premier League, Champions League, La Liga, and more.
 
-<br />
+[![Live Demo](https://img.shields.io/badge/Live_Demo-2563eb?style=flat-square)](https://football-live.sumsols.com/) [![Documentation](https://img.shields.io/badge/Docs-16a34a?style=flat-square)](https://football-live-scoreboard-docs.netlify.app/)
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-View_App-2563eb?style=for-the-badge)](https://football-live.sumsols.com/)
-[![Documentation](https://img.shields.io/badge/Documentation-Full_Guide-16a34a?style=for-the-badge)](https://football-live-scoreboard-docs.netlify.app/)
-
-<br />
-
-[![Website](https://img.shields.io/badge/Website-sumsols.com-16a34a?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sumsols.com/)
-[![Facebook](https://img.shields.io/badge/Facebook-SumSols-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-SumSols-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/)
-[![Instagram](https://img.shields.io/badge/Instagram-SumSols-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/)
-
-<br />
-
-[![Email](https://img.shields.io/badge/Email-sumsolstechnologies@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com)
-[![Phone](https://img.shields.io/badge/Phone-+92_3250602727-2563eb?style=for-the-badge)](tel:+923250602727)
+[![Website](https://img.shields.io/badge/-16a34a?style=flat-square&logo=googlechrome&logoColor=white)](https://sumsols.com/) [![Facebook](https://img.shields.io/badge/-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/) [![LinkedIn](https://img.shields.io/badge/-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/) [![Instagram](https://img.shields.io/badge/-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/-2563eb?style=flat-square&logo=whatsapp&logoColor=white)](tel:+923250602727)
 
 </div>
 
@@ -104,71 +91,73 @@ Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](ht
 ## Folder Structure
 
 ```
-football-live-score-AI/
-├── Backend/
-│   ├── .env                        # API key and server config
-│   ├── package.json
-│   └── src/
-│       ├── index.js                # Express app entry point, Socket.IO init
-│       ├── controllers/
-│       │   ├── league.controllers.js
-│       │   └── match.controllers.js
-│       ├── middlewares/
-│       │   └── errorHandler.js     # 404 + global error handlers
-│       ├── models/
-│       │   ├── league.models.js
-│       │   └── match.models.js
-│       ├── routes/
-│       │   ├── league.routes.js
-│       │   └── match.routes.js
-│       ├── services/
-│       │   └── footballService.js  # API client, caching, data transformers
-│       └── socketServer/
-│           ├── livePoller.js       # Polling loop + diff-based Socket.IO emit
-│           └── socket.js           # Socket.IO server setup and room management
-└── Frontend/
-    └── Football-Frontend/
-        ├── .env                    # Vite API base URL
-        ├── index.html
-        ├── vite.config.js
-        ├── tailwind.config.js
-        ├── public/
-        │   ├── favicon.svg
-        │   └── icons.svg
-        └── src/
-            ├── main.jsx            # React root, provider tree
-            ├── App.jsx             # Route definitions
-            ├── App.css
-            ├── index.css           # Tailwind base + custom tokens
-            ├── api/
-            │   ├── leagueApi.js    # League fetch helpers
-            │   └── matchApi.js     # Match fetch + normalizeMatch()
-            ├── assets/
-            │   ├── logo.png
-            │   ├── hero.png
-            │   └── shield-logo.svg
-            ├── components/
-            │   ├── EmptyState.jsx
-            │   ├── Header.jsx      # Sticky nav with sliding indicator
-            │   ├── LeagueCard.jsx
-            │   ├── LiveBadge.jsx
-            │   ├── Loader.jsx
-            │   ├── MatchCard.jsx
-            │   ├── PossessionBar.jsx
-            │   ├── StatRow.jsx
-            │   ├── TeamAvatar.jsx
-            │   └── TeamColumn.jsx
-            ├── context/
-            │   ├── MatchesContext.jsx  # Global live/today match state + 60s refresh
-            │   ├── SettingsContext.jsx # Stats style preference
-            │   └── ThemeContext.jsx    # Dark mode state + localStorage sync
-            └── pages/
-                ├── Home.jsx        # League browser with search and live count badges
-                ├── League.jsx      # Fixtures for a specific league
-                ├── LiveMatches.jsx # All live matches with league filter pills
-                ├── Matches.jsx     # Match detail: score, events, statistics
-                └── Settings.jsx    # Dark mode toggle, stats style, app info
+📁 football-live-score-AI/
+├── 📁 Backend/
+│   ├── 🔐 .env                        # API key and server config
+│   ├── 📦 package.json
+│   └── 📁 src/
+│       ├── 📜 index.js                # Express app entry point, Socket.IO init
+│       ├── 📁 controllers/
+│       │   ├── 📜 league.controllers.js
+│       │   └── 📜 match.controllers.js
+│       ├── 📁 middlewares/
+│       │   └── 📜 errorHandler.js     # 404 + global error handlers
+│       ├── 📁 models/
+│       │   ├── 📜 league.models.js
+│       │   └── 📜 match.models.js
+│       ├── 📁 routes/
+│       │   ├── 📜 league.routes.js
+│       │   └── 📜 match.routes.js
+│       ├── 📁 services/
+│       │   └── 📜 footballService.js  # API client, caching, data transformers
+│       └── 📁 socketServer/
+│           ├── 📜 livePoller.js       # Polling loop + diff-based Socket.IO emit
+│           └── 📜 socket.js           # Socket.IO server setup and room management
+└── 📁 Frontend/
+    └── 📁 Football-Frontend/
+        ├── 🔐 .env                    # Vite API base URL
+        ├── 🌐 index.html
+        ├── ⚙️ vite.config.js
+        ├── ⚙️ tailwind.config.js
+        ├── 📁 public/
+        │   ├── 🖼️ favicon.svg
+        │   └── 🖼️ icons.svg
+        └── 📁 src/
+            ├── ⚛️ main.jsx            # React root, provider tree
+            ├── ⚛️ App.jsx             # Route definitions
+            ├── 🎨 App.css
+            ├── 🎨 index.css           # Tailwind base + custom tokens
+            ├── 📁 api/
+            │   ├── 📜 leagueApi.js    # League fetch helpers
+            │   └── 📜 matchApi.js     # Match fetch + normalizeMatch()
+            ├── 📁 assets/
+            │   ├── 🖼️ logo.png
+            │   ├── 🖼️ hero.png
+            │   └── 🖼️ shield-logo.svg
+            ├── 📁 components/
+            │   ├── ⚛️ EmptyState.jsx
+            │   ├── ⚛️ Header.jsx      # Sticky nav with sliding indicator
+            │   ├── ⚛️ LeagueCard.jsx
+            │   ├── ⚛️ LiveBadge.jsx
+            │   ├── ⚛️ Loader.jsx
+            │   ├── ⚛️ MatchCard.jsx
+            │   ├── ⚛️ PossessionBar.jsx
+            │   ├── ⚛️ StatRow.jsx
+            │   ├── ⚛️ TeamAvatar.jsx
+            │   └── ⚛️ TeamColumn.jsx
+            ├── 📁 context/
+            │   ├── ⚛️ MatchesContext.jsx  # Global live/today match state + 60s refresh
+            │   ├── ⚛️ SettingsContext.jsx # Stats style preference
+            │   └── ⚛️ ThemeContext.jsx    # Dark mode state + localStorage sync
+            └── 📁 pages/
+                ├── ⚛️ Home.jsx        # League browser with search and live count badges
+                ├── ⚛️ League.jsx      # Fixtures for a specific league
+                ├── ⚛️ LiveMatches.jsx # All live matches with league filter pills
+                ├── ⚛️ Matches.jsx     # Match detail: score, events, statistics
+                └── ⚛️ Settings.jsx    # Dark mode toggle, stats style, app info
 ```
+
+**Legend:** 📁 Folder · 📜 JavaScript · ⚛️ React (JSX) · 🎨 CSS · 🌐 HTML · ⚙️ Config · 📦 JSON · 🔐 Env · 🖼️ Image/SVG
 
 ---
 
@@ -483,17 +472,8 @@ See [LICENSE.txt](./LICENSE.txt) for the commercial use terms included with this
 
 **Developed by [SumSols Technologies](https://sumsols.com/)**
 
-[![Website](https://img.shields.io/badge/Website-sumsols.com-16a34a?style=flat-square&logo=googlechrome&logoColor=white)](https://sumsols.com/)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/)
-[![Email](https://img.shields.io/badge/Email-sumsolstechnologies@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com)
-[![Phone](https://img.shields.io/badge/Phone-+92_3250602727-2563eb?style=flat-square)](tel:+923250602727)
+[![Website](https://img.shields.io/badge/-16a34a?style=flat-square&logo=googlechrome&logoColor=white)](https://sumsols.com/) [![Facebook](https://img.shields.io/badge/-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/) [![LinkedIn](https://img.shields.io/badge/-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/) [![Instagram](https://img.shields.io/badge/-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/-2563eb?style=flat-square&logo=whatsapp&logoColor=white)](tel:+923250602727)
 
-<br />
-
-[Live Demo](https://football-live.sumsols.com/) · [Documentation](https://football-live-scoreboard-docs.netlify.app/)
-
-Data by [API-Football](https://www.api-football.com/)
+[Live Demo](https://football-live.sumsols.com/) · [Documentation](https://football-live-scoreboard-docs.netlify.app/) · Data by [API-Football](https://www.api-football.com/)
 
 </div>
