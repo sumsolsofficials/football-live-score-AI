@@ -6,9 +6,17 @@
 
 Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](https://www.api-football.com/) — live scores, today's fixtures, goals, possession & stats for Premier League, Champions League, La Liga, and more.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-2563eb?style=flat-square)](https://football-live.sumsols.com/) [![Documentation](https://img.shields.io/badge/Docs-16a34a?style=flat-square)](https://football-live-scoreboard-docs.netlify.app/)
+<a href="https://football-live.sumsols.com/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Live_Demo-2563eb?style=plastic" alt="Live Demo" height="28" /></a>&nbsp;
+<a href="https://football-live-scoreboard-docs.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Documentation-16a34a?style=plastic" alt="Documentation" height="28" /></a>
 
-[![Website](https://img.shields.io/badge/-16a34a?style=flat-square&logo=googlechrome&logoColor=white)](https://sumsols.com/) [![Facebook](https://img.shields.io/badge/-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/) [![LinkedIn](https://img.shields.io/badge/-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/) [![Instagram](https://img.shields.io/badge/-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/-2563eb?style=flat-square&logo=whatsapp&logoColor=white)](tel:+923250602727)
+<br />
+
+<a href="https://sumsols.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/googlechrome/16A34A" alt="Website" height="36" /></a>&nbsp;
+<a href="https://www.facebook.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook" height="36" /></a>&nbsp;
+<a href="https://www.linkedin.com/company/sumsols-technologies/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" height="36" /></a>&nbsp;
+<a href="https://www.instagram.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" height="36" /></a>&nbsp;
+<a href="mailto:sumsolstechnologies@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" height="36" /></a>&nbsp;
+<a href="tel:+923250602727"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="Phone" height="36" /></a>
 
 </div>
 
@@ -470,10 +478,17 @@ See [LICENSE.txt](./LICENSE.txt) for the commercial use terms included with this
 
 <div align="center">
 
-**Developed by [SumSols Technologies](https://sumsols.com/)**
+**Developed by <a href="https://sumsols.com/" target="_blank" rel="noopener noreferrer">SumSols Technologies</a>**
 
-[![Website](https://img.shields.io/badge/-16a34a?style=flat-square&logo=googlechrome&logoColor=white)](https://sumsols.com/) [![Facebook](https://img.shields.io/badge/-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/sumsolstechnologies/) [![LinkedIn](https://img.shields.io/badge/-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/sumsols-technologies/) [![Instagram](https://img.shields.io/badge/-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/-2563eb?style=flat-square&logo=whatsapp&logoColor=white)](tel:+923250602727)
+<a href="https://sumsols.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/googlechrome/16A34A" alt="Website" height="36" /></a>&nbsp;
+<a href="https://www.facebook.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook" height="36" /></a>&nbsp;
+<a href="https://www.linkedin.com/company/sumsols-technologies/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" height="36" /></a>&nbsp;
+<a href="https://www.instagram.com/sumsolstechnologies/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" height="36" /></a>&nbsp;
+<a href="mailto:sumsolstechnologies@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" height="36" /></a>&nbsp;
+<a href="tel:+923250602727"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="Phone" height="36" /></a>
 
-[Live Demo](https://football-live.sumsols.com/) · [Documentation](https://football-live-scoreboard-docs.netlify.app/) · Data by [API-Football](https://www.api-football.com/)
+<a href="https://football-live.sumsols.com/" target="_blank" rel="noopener noreferrer">Live Demo</a> ·
+<a href="https://football-live-scoreboard-docs.netlify.app/" target="_blank" rel="noopener noreferrer">Documentation</a> ·
+<a href="https://www.api-football.com/" target="_blank" rel="noopener noreferrer">API-Football</a>
 
 </div>
