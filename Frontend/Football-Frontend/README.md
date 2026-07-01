@@ -1,16 +1,66 @@
-# React + Vite
+# ⚽ Football Live Scoreboard — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite frontend for the Football Live Score app.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** with React Router v7
+- **Tailwind CSS v4** (via `@tailwindcss/postcss`)
+- **Vite 8** as build tool
+- **Axios** for REST calls to the backend
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Copy env file (only needed if you change the backend port)
+cp .env.example .env
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`.env` (optional):
+
+```env
+VITE_API_URL=http://localhost:5003
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+Starts the Vite dev server at `http://localhost:5173`.  
+The `/api` prefix is proxied to `VITE_API_URL` (default `http://localhost:5003`).
+
+## Build
+
+```bash
+npm run build
+```
+
+Output goes to `dist/`. Deploy the contents to any static host (Vercel, Netlify, etc.).  
+Make sure to set up an SPA fallback rule so React Router handles all routes.
+
+## Lint
+
+```bash
+npm run lint
+```
+
+## Project structure
+
+```
+src/
+├── api/          # Axios wrappers (leagueApi, matchApi)
+├── assets/       # Images and SVGs
+├── components/   # Reusable UI (Header, MatchCard, LeagueCard, …)
+├── context/      # React contexts (Matches, Theme, Settings)
+├── pages/        # Route-level views (Home, Live, League, Match, Settings)
+├── App.jsx       # Route definitions
+├── main.jsx      # React root + provider tree
+└── index.css     # Tailwind base + custom design tokens
+```
+
+See the [root README](../../README.md) for full project documentation including API reference and deployment guide.
