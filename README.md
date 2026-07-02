@@ -10,7 +10,7 @@ Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](ht
 
 [![Instagram](https://img.shields.io/badge/Instagram-SumSols-E4405F?style=flat-square&logo=instagram&logoColor=white&labelColor=555555)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/Email-Contact_Us-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=555555)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/Phone-%2B92_3250602727-2563eb?style=flat-square&labelColor=555555)](tel:+923250602727) [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white&labelColor=555555)](https://github.com/sumsolsofficials/football-live-score-AI)
 
-### 🚀 [Live Demo](https://football-live.sumsols.com/) · 📖 [Documentation](https://football-live-scoreboard-docs.netlify.app/)
+
 
 </div>
 
@@ -476,6 +476,5 @@ See [LICENSE.txt](./LICENSE.txt) for the commercial use terms included with this
 
 [![Instagram](https://img.shields.io/badge/Instagram-SumSols-E4405F?style=flat-square&logo=instagram&logoColor=white&labelColor=555555)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/Email-Contact_Us-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=555555)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/Phone-%2B92_3250602727-2563eb?style=flat-square&labelColor=555555)](tel:+923250602727) [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white&labelColor=555555)](https://github.com/sumsolsofficials/football-live-score-AI)
 
-### 🚀 [Live Demo](https://football-live.sumsols.com/) · 📖 [Documentation](https://football-live-scoreboard-docs.netlify.app/)
 
 </div>
