@@ -260,7 +260,7 @@ Open your browser and navigate to `http://localhost:5173`.
 The home page displays all leagues with fixtures scheduled for today. Leagues are sorted by prominence (Premier League, Champions League, La Liga first). A live count badge appears on each league card when matches in that league are in progress. Use the search bar to filter leagues by name or country.
 
 <p align="center">
-  <img src="image-6.png" alt="Football live scoreboard home page — league browser with search and live count badges" width="720" />
+  <img src="images/image-6.png" alt="Football live scoreboard home page — league browser with search and live count badges" width="720" />
 </p>
 
 ### Live Matches Page
@@ -268,7 +268,7 @@ The home page displays all leagues with fixtures scheduled for today. Leagues ar
 Tap **Live** in the navigation bar to see all currently in-progress fixtures. When more than one league is live, horizontal filter pills appear at the top - tap any league to narrow the view. Each match card shows the current score, elapsed minute, and a pulsing LIVE indicator.
 
 <p align="center">
-  <img src="image-1.png" alt="Live football matches page with real-time scores and LIVE indicators" width="720" />
+  <img src="images/image-1.png" alt="Live football matches page with real-time scores and LIVE indicators" width="720" />
 </p>
 
 ### Match Detail Page
@@ -280,9 +280,9 @@ Tap any match card to open the detail view. The page shows:
 - **Match statistics** - shots, possession, corners, fouls, yellow/red cards, and pass accuracy, displayed as progress bars, numbers, or both (configurable in Settings)
 
 <p align="center">
-  <img src="image-2.png" alt="Football match detail — goal events timeline with scorer and minute" width="720" />
+  <img src="images/image-2.png" alt="Football match detail — goal events timeline with scorer and minute" width="720" />
   <br /><br />
-  <img src="image-3.png" alt="Football match statistics — possession, shots, corners and fouls" width="720" />
+  <img src="images/image-3.png" alt="Football match statistics — possession, shots, corners and fouls" width="720" />
 </p>
 
 ### Settings Page
@@ -294,9 +294,9 @@ Access **Settings** from the navigation bar to configure:
 - **Refresh Rate** - currently fixed at 60 seconds (API-Football free tier limit)
 
 <p align="center">
-  <img src="image-4.png" alt="Settings page — dark mode toggle and stats display style" width="720" />
+  <img src="images/image-4.png" alt="Settings page — dark mode toggle and stats display style" width="720" />
   <br /><br />
-  <img src="image-5.png" alt="Football live scoreboard dark mode UI" width="720" />
+  <img src="images/image-5.png" alt="Football live scoreboard dark mode UI" width="720" />
 </p>
 
 ---
