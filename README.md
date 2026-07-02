@@ -10,6 +10,8 @@ Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](ht
 
 [![Instagram](https://img.shields.io/badge/Instagram-SumSols-E4405F?style=flat-square&logo=instagram&logoColor=white&labelColor=555555)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/Email-Contact_Us-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=555555)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/Phone-%2B92_3250602727-2563eb?style=flat-square&labelColor=555555)](tel:+923250602727) [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white&labelColor=555555)](https://github.com/sumsolsofficials/football-live-score-AI)
 
+### 🚀 [Live Demo](https://football-live.sumsols.com/) · 📖 [Documentation](https://football-live-scoreboard-docs.netlify.app/)
+
 </div>
 
 ---
@@ -473,5 +475,7 @@ See [LICENSE.txt](./LICENSE.txt) for the commercial use terms included with this
 [![Live Demo](https://img.shields.io/badge/Live_Demo-View_App-2563eb?style=flat-square&labelColor=555555)](https://football-live.sumsols.com/) [![Documentation](https://img.shields.io/badge/Documentation-Full_Guide-16a34a?style=flat-square&labelColor=555555)](https://football-live-scoreboard-docs.netlify.app/) [![Website](https://img.shields.io/badge/Website-sumsols.com-059669?style=flat-square&labelColor=555555)](https://sumsols.com/) [![Facebook](https://img.shields.io/badge/Facebook-SumSols-1877F2?style=flat-square&logo=facebook&logoColor=white&labelColor=555555)](https://www.facebook.com/sumsolstechnologies/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-SumSols-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=555555)](https://www.linkedin.com/company/sumsols-technologies/)
 
 [![Instagram](https://img.shields.io/badge/Instagram-SumSols-E4405F?style=flat-square&logo=instagram&logoColor=white&labelColor=555555)](https://www.instagram.com/sumsolstechnologies/) [![Email](https://img.shields.io/badge/Email-Contact_Us-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=555555)](mailto:sumsolstechnologies@gmail.com) [![Phone](https://img.shields.io/badge/Phone-%2B92_3250602727-2563eb?style=flat-square&labelColor=555555)](tel:+923250602727) [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white&labelColor=555555)](https://github.com/sumsolsofficials/football-live-score-AI)
+
+### 🚀 [Live Demo](https://football-live.sumsols.com/) · 📖 [Documentation](https://football-live-scoreboard-docs.netlify.app/)
 
 </div>
