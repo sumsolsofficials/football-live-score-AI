@@ -22,17 +22,26 @@ Full-stack app with React, Node.js, Express, Socket.IO, and [API-Football v3](ht
 
 ## Table of Contents
 
+### 👤 User Guide
 - [Features](#features)
+- [Usage Guide](#usage-guide)
+  - [Home Page - League Browser](#home-page---league-browser)
+  - [Live Matches Page](#live-matches-page)
+  - [Match Detail Page](#match-detail-page)
+  - [Settings Page](#settings-page)
+
+### ⚙️ System Guide
 - [Tech Stack](#tech-stack)
 - [Folder Structure](#folder-structure)
 - [Installation & Setup](#installation--setup)
 - [Environment Variables](#environment-variables)
 - [How to Run Locally](#how-to-run-locally)
-- [Usage Guide](#usage-guide)
 - [API Integration Details](#api-integration-details)
 - [REST API Reference](#rest-api-reference)
 - [Socket.IO Events](#socketio-events)
 - [Deployment](#deployment)
+
+### 🔮 Other
 - [Future Improvements](#future-improvements)
 - [License](#license)
 
